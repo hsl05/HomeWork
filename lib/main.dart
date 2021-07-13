@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'refector/Button.dart';
 import 'refector/drawer.dart';
 
+///git add . -> git commit -m "하고싶은말" -> git push
+
 void main() {
   runApp(MyApp());
 }

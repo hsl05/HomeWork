@@ -79,12 +79,15 @@ class _LoginPageState extends State<LoginScreen> {
                   height: 40,
                 ),
                 SizedBox(
-                  child: FloatingActionButton(
+                  height: 50,
+                  width: 80,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.black,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50),),
+                    ),
                     onPressed: () {},
-                    backgroundColor: Colors.black,
-                    child:
-                    Icon(Icons.face_rounded),
-
+                    child: Icon(Icons.face_rounded),
                   ),
                 )
               ])
