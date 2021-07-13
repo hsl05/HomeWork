@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'home.dart';
 import 'settings.dart';
 import 'search.dart';
+import 'login.dart';
 
 class DrawerExample extends StatefulWidget {
   const DrawerExample({Key? key}) : super(key: key);
@@ -70,6 +71,17 @@ class _DrawerExampleState extends State<DrawerExample> {
                 Navigator.push(
                     context,
                     CupertinoPageRoute(builder: (context) => SearchScreen())
+                );
+              }),
+          ListTile(
+              leading: Icon(
+                Icons.face_rounded,),
+              title: Text('Login',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(builder: (context) => LoginScreen())
                 );
               }),
           ListTile(
